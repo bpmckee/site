@@ -1,0 +1,102 @@
+PAGES
+--------------------
+==== NUTRITION
+*Food Diary
+*Search For Food
+*Search for Recipes
+*Various Recipes
+*Forums
+*Charts
+*Daily detailed nutrition.
+*User Profiles
+*Settings
+*Home (settings?)
+
+*Add To Diary (modal or dropdown?)
+
+*Reminders
+*Help
+
+*
+
+
+Nutrition Log ====
+* FOOD
+* WATER
+* Weight
+* Daily Goals.
+
+Profile ====
+* Settings
+* Upgrade to pro
+* Home Profile
+* Friends
+* Messages / Notifications
+
+Charts ====
+* Daily nutrition label
+* Weight
+* Various chart breakdown stuff
+
+Forums =====
+
+Home ====
+* Dashboard w/ stats
+* quick links
+
+Recipes ====
+* Recipe Search Results
+* Recipe pages
+
+Challenges ====
+* Challenges Search
+* Challenge Page
+
+Diets ====
+* Diet Search
+* Diet page
+
+Knowledge (tips) ===
+* Tip search
+* Tip Save
+* Tip page (cycles tips).
+* tip page detailed (if available).
+
+Resturants ====
+* Resturant search
+* Menu - w/ nutrition
+
+Find Food ====
+* Search for nearby resturants
+* see their menu's and stuff.
+
+
+Food
+* Add to diary
+* Meal builder
+* Add Food to list of foods.
+* 
+
+
+Food
+  | Search | Add | Recipes | Resturants
+
+
+
+
+Knowledge
+------------
+   Tips | Exercise Programs | Diets
+
+
+
+
+
+
+Recipes:
+--------
+* Home
+* Search results
+* Recipe page
+* Add Recipe
+   -- Add ingredients

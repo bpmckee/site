@@ -1,0 +1,19 @@
+
+<div class="nav">
+  <div id="navProfile">
+    <a href="#" class="imgCircle">
+      <i class="fa fa-user"></i>
+    </a>
+    <button type="button" bs-dropdown="userDropdown" data-placement="bottom">
+      <span class="name">Billy McKee8</span>
+      <i class="fa fa-angle-down"></i>
+    </button>
+  </div>
+  <ul>
+    <li ng-repeat="navItem in nav.siteMap" ng-class="{'active':navItem.activeWhen == nav.active}">
+      <a ng-href="{{navItem.href}}" ng-click="nav.close()">
+        <i class="fa fa-{{navItem.icon}}"></i>{{navItem.label}}
+      </a>
+    </li>
+  </ul>
+</div>

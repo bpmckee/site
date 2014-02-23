@@ -1,0 +1,170 @@
+
+
+// Flip
+//
+
+$flip-duration: .4s;
+$flip-timing-function: ease;
+
+.am-flip-x {
+
+  -webkit-animation-duration: $flip-duration;
+  animation-duration: $flip-duration;
+  -webkit-animation-timing-function: $flip-timing-function;
+  animation-timing-function: $flip-timing-function;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+
+  &.am-flip-x-add, &.ng-hide-remove, &.ng-move {
+    -webkit-animation-name: flipInXBounce;
+    animation-name: flipInXBounce;
+  }
+  &.am-flip-x-remove, &.ng-hide {
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+  }
+
+  &.ng-enter {
+    visibility: hidden;
+    -webkit-animation-name: flipInXBounce;
+    animation-name: flipInXBounce;
+    &.ng-enter-active {
+      visibility: visible;
+    }
+  }
+  &.ng-leave {
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+  }
+
+}
+
+.am-flip-x-linear {
+
+  -webkit-animation-duration: $flip-duration;
+  animation-duration: $flip-duration;
+  -webkit-animation-timing-function: $flip-timing-function;
+  animation-timing-function: $flip-timing-function;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+
+  &.am-flip-x-add, &.ng-hide-remove, &.ng-move {
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+  }
+  &.am-flip-x-remove, &.ng-hide {
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+  }
+
+  &.ng-enter {
+    visibility: hidden;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    &.ng-enter-active {
+      visibility: visible;
+    }
+  }
+  &.ng-leave {
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+  }
+
+}
+
+// Keyframes
+//
+
+@keyframes flipInX {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipInXBounce {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipOutX {
+  from {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+}
+
+@-webkit-keyframes flipInX {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes flipInXBounce {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes flipOutX {
+  from {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+}

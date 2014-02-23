@@ -1,0 +1,39 @@
+//Styles
+.actionbar {
+  height: $topbar-height-large;
+  line-height: $topbar-height-large;
+  .btn {
+    height: $topbar-height-large;
+    line-height: $topbar-height-large;
+    width: #{$topbar-height-large + $topbar-btn-border-width-large};
+    border-left-width: $topbar-btn-border-width-large;
+  }
+  .menu .btn {
+    min-width: #{$topbar-height-large + $topbar-btn-border-width-large};
+    border-right: $topbar-btn-border-width-large solid $topbar-border-color;
+    padding:0 20px;
+    float:left;
+    .title {
+      display:none;
+    }
+  }
+  .title {
+    display:block;
+    text-align:center;
+    position:absolute;
+    width:100%;
+    font-size:32px;
+  }
+  .dropdown.active:before {
+    top:75px;
+  }
+  .dropdown .popout {
+    top:87px;
+  }
+}
+.drilldown .actionbar .title {
+  display:none;
+}
+.drilldown .actionbar .menu .btn {
+  border-color:#777;
+}

@@ -1,0 +1,9 @@
+.right {
+  float:right;
+}
+.clearfix {
+  @include susy-clearfix;
+}
+.left {
+  float:left;
+}

@@ -1,0 +1,93 @@
+.btn {
+  background: none;
+  border:0;
+  border-radius: 20px;
+  text-align:center;
+  display:inline-block;
+  color: $grey-darkest;
+  padding: 0 20px;
+  position:relative;
+  height:39px;    /* 26 + (26/2) */
+  line-height: 39px;
+  font-weight:bold;
+  border:2px solid $grey-darkest;
+  &:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+  }
+  &:active {
+    outline: 0;
+  }
+  &:hover, &.active {
+    background-color:$white;
+  }
+  i+span,
+  span+i{
+    margin-left:12px;
+  }
+  &.circle {
+    width:39px;
+    padding:0;
+  }
+}
+button,input[type="button"],input[type="submit"] {
+  @extend .btn;
+}
+
+.btn.yellow {
+  border-color: #f2d54c;
+  color: #f2d54c;
+}
+.btn.green {
+  border-color: $green-dark;
+  color: $green-dark;
+}
+.btn.orange {
+  border-color: $orange;
+  color: $orange;
+}
+.btn.red {
+  border-color: $red;
+  color: $red;
+}
+.btn.yellow {
+  border-color: $yellow;
+  color: $yellow;
+}
+.btn.mint {
+  border-color: $mint;
+  color:$mint;
+}
+.btn.aqua {
+  border-color: $aqua;
+  color: $aqua;
+}
+.btn.blue {
+  border-color: $blue;
+  color:$blue;
+  &:active {
+    background:$blue;
+    color:$white;
+  }
+}
+.btn.purple {
+  border-color: $purple;
+  color: $purple;
+}
+.btn.pink {
+  border-color: $pink;
+  color: $pink;
+}
+.btn.grey {
+  border-color: $grey;
+  color: $grey;
+}
+.btn.active {
+  outline: 0;
+}
+.btn.disabled,
+button:disabled,
+input[type=submit]:disabled {
+  cursor: default;
+  opacity: 0.7;
+}

@@ -1,0 +1,16 @@
+<div class="popover">
+  <div class="arrow"></div>
+  <div class="popover-content overflowItems">
+    <div ng-repeat="item in activity.overflowItems">
+      <a href="#" ng-if="item.directive=='datepicker'"
+            bs-datepicker
+            data-placement="bottom-right"
+            data-animation="am-flip-x"
+            data-trigger="click"
+            data-autoclose="1"
+            ng-model="date">{{item.label}}</a>
+      <a href="#" ng-if="item.directive!='datepicker'"
+            action-item>{{item.label}}</a>
+    </div>
+  </div>
+</div>

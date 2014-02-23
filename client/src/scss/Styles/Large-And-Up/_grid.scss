@@ -1,0 +1,89 @@
+$susy: (
+  columns: 12,
+  gutters: 1/3
+) !global;
+
+.row {
+  margin:0 $grid-gutters-large;
+}
+
+.lg {
+  @include span(1);
+}
+.lg2{
+  @include span(2);
+}
+.lg3 {
+  @include span(3);
+}
+.lg4 {
+  @include span(4);
+}
+.lg5 {
+  @include span(5);
+}
+.lg6 {
+  @include span(6);
+}
+.lg7 {
+  @include span(7);
+}
+.lg8 {
+  @include span(8);
+}
+.lg9 {
+  @include span(9);
+}
+.lg10 {
+  @include span(10);
+}
+.lg11 {
+  @include span(11);
+}
+.lastLg {
+  margin-right: 0;
+}
+.lg-last {
+  @extend .lg;
+  @extend .lastLg;
+}
+.lg2-last {
+  @extend .lg2;
+  @extend .lastLg;
+}
+.lg3-last {
+  @extend .lg3;
+  @extend .lastLg;
+}
+.lg4-last {
+  @extend .lg4;
+  @extend .lastLg;
+}
+.lg5-last {
+  @extend .lg5;
+  @extend .lastLg;
+}
+.lg6-last {
+  @extend .lg6;
+  @extend .lastLg;
+}
+.lg7-last {
+  @extend .lg7;
+  @extend .lastLg;
+}
+.lg8-last {
+  @extend .lg8;
+  @extend .lastLg;
+}
+.lg9-last {
+  @extend .lg9;
+  @extend .lastLg;
+}
+.lg10-last {
+  @extend .lg10;
+  @extend .lastLg;
+}
+.lg11-last {
+  @extend .lg11;
+  @extend .lastLg;
+}

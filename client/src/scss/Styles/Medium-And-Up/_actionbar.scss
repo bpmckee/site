@@ -1,0 +1,17 @@
+//Styles
+.actionbar {
+  height: $topbar-height-medium;
+  line-height: $topbar-height-medium;
+  .btn {
+    height: $topbar-height-medium;
+    line-height: $topbar-height-medium;
+    width: #{$topbar-height-medium + $topbar-border-width-medium};
+    border-left-width: $topbar-btn-border-width-medium;
+  }
+  .dropdown.active:before {
+    top:55px;
+  }
+  .dropdown .popout {
+    top:67px;
+  }
+}

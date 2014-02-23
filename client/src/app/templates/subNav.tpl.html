@@ -1,0 +1,9 @@
+<div id="subNav" ng-if="nav.subNav">
+  <div class="row">
+    <ul class="menu">
+      <li ng-repeat="tab in nav.subNav">
+        <a ng-href="tab.href" ng-class="{'active': tab.activeWhen == nav.activeSubNav}">{{tab.label}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

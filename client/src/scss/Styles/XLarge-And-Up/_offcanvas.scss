@@ -1,0 +1,26 @@
+.pusher, .menu-open .pusher,
+.nav, .menu-open .nav {
+  -webkit-transition: initial;
+  transition: initial;
+  -webkit-transform: initial;
+  transform: initial;
+}
+
+.main-content {
+  margin-left: 250px;
+}
+
+.menu-open #closeNavOverlay {
+  display:none;
+}
+
+.main-content-inner {
+  padding-top:0;
+}
+
+.topbarSpacer {
+  display:none;
+}
+footer {
+  padding-bottom:0;
+}

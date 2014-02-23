@@ -1,0 +1,35 @@
+$susy: (
+  columns: 4,
+  gutters: 1/4,
+  grid-position: inside
+);
+.row {
+  @include susy-clearfix;
+  margin: 0 $grid-gutters-small;
+  min-height: 100%;
+}
+
+.xs {
+  @include span(1);
+}
+.xs2 {
+  @include span(2);
+}
+.xs3 {
+  @include span(3);
+}
+.last {
+  margin-right: 0;
+}
+.xs-last {
+  @extend .xs;
+  @extend .last;
+}
+.xs2-last {
+  @extend .xs2;
+  @extend .last;
+}
+.xs3-last {
+  @extend .xs3;
+  @extend .last;
+}

@@ -1,0 +1,47 @@
+.datepicker {
+  .controls {
+    line-height:39px;
+    height:39px;
+    border-bottom:1px solid #ddd;
+    button {
+      height:39px;
+      line-height:39px;
+      border-radius:0;
+      width:220px;
+      min-width:34px;
+      margin:0;
+      padding:0;
+      &:first-child {
+        width:34px;
+      }
+      &:last-child {
+        width:34px;
+      }
+      &:active {
+        top:0;
+        color:$blue-dark;
+      }
+    }
+  }
+  .disp-row.labels {
+    background-color:#f6f6f6;
+    line-height:29px;
+  }
+  .disp-row {
+    button {
+      border-radius:0;
+      border:0;
+      border-top:1px solid #ccc;
+      border-left:1px solid #ccc;
+      width:100%;
+      &:hover {
+        background-color:#f6f6f6;
+        color:$grey-darkest;
+      }
+    }
+  }
+  &.popout {
+    width:300px;
+    min-width:300px;
+  }
+}

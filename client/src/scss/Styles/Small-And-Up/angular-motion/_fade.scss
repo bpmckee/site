@@ -1,0 +1,92 @@
+
+// Fade
+//
+
+$fade-duration: .3s;
+$fade-timing-function: linear;
+
+.am-fade {
+  -webkit-animation-duration: $fade-duration;
+  animation-duration: $fade-duration;
+  -webkit-animation-timing-function: $fade-timing-function;
+  animation-timing-function: $fade-timing-function;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  opacity: 1;
+
+  &.am-fade-add, &.ng-hide-remove, &.ng-move  {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  &.am-fade-remove, &.ng-hide {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+  &.ng-enter {
+    visibility: hidden;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    &.ng-enter-active {
+      visibility: visible;
+    }
+  }
+  &.ng-leave {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+}
+
+
+// Keyframes
+//
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+// Bootstrap 3
+//
+
+.modal-backdrop, .aside-backdrop {
+
+  &.am-fade {
+    background: rgba(0, 0, 0, .5);
+    -webkit-animation-duration: $fade-duration / 2;
+    animation-duration: $fade-duration / 2;
+
+  }
+
+}

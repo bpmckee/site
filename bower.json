@@ -1,0 +1,22 @@
+{
+  "name": "true",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.0-rc.3",
+    "angular-route": "1.2.0-rc.3",
+    "angular-touch": "1.2.0-rc.3",
+    "angular-sanitize": "1.2.0-rc.3",
+    "json3": "latest",
+    "es5-shim": "latest",
+    "angular-strap": "~2.0.0",
+    "angular-motion": "~0.3.1",
+    "angular-animate": "~1.2.10"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.0-rc.3",
+    "angular-scenario": "1.2.0-rc.3"
+  },
+  "resolutions": {
+    "angular": "1.2.11-build.2192+sha.e2173f9"
+  }
+}

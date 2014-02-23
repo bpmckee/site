@@ -1,0 +1,12 @@
+#food-table {
+  margin-left:$grid-gutters-medium;
+}
+#food-table-right {
+  max-width:60%;
+ }
+#food-table-left {
+  width:40%;
+}
+#food-table.edit {
+  margin-right:$grid-gutters-medium;
+}

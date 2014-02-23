@@ -1,0 +1,48 @@
+{
+  "name": "angular",
+  "private": true,
+  "version": "0.0.1",
+  "description": "AngularJs, 320 and up",
+  "keywords": [
+    "yeoman-generator",
+    "AngularJs",
+    "Mobile-First",
+    "Responsive",
+    "template"
+  ],
+  "homepage": "https://github.com/bpmckee",
+  "author": {
+    "name": "angular McKee",
+    "email": "bpmckee3@gmail.com"
+  },
+  "main": "app/index.js",
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "bower": "~0.9.2",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-open": "latest",
+    "matchdep": "latest",
+    "connect-livereload": "latest",
+    "moment": "latest",
+    "grunt-html2js": "latest"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  }
+}

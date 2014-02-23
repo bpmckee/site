@@ -1,0 +1,46 @@
+//Styles
+.drilldown .actionbar{
+  height:100px;
+  position:fixed;
+}
+.actionbar {
+  border:0;
+  box-shadow:none;
+  position: relative;
+  .menu {
+    display: none;
+  }
+  .title {
+    position: relative;
+    float:left;
+    width: auto;
+    margin: 0 $grid-gutters-xlarge;
+    height:80px;
+    line-height:104px;
+  }
+  .actions {
+    float:left;
+    height:40px;
+    margin-top:30px;
+    .container > .btn {
+      height:40px;
+      min-width:40px;
+      width:auto;
+      padding:0 8px;
+      border-radius: 20px;
+      border-width:2px;
+      line-height:40px;
+      margin-right:8px;
+    }
+  }
+  .dropdown.active:before {
+    top:33px;
+  }
+  .dropdown .popout {
+    top:45px;
+    left:0;
+  }
+}
+#topNavWrap {
+  position:relative;
+}

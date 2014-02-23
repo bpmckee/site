@@ -1,0 +1,30 @@
+@mixin base-font-size(){
+  @if $use-px {
+    font-size: $basefont;
+  }
+  @if $use-rem{
+    font-size: #{strip-units($basefont)/16}rem;
+  }
+}
+
+@mixin base-line-height(){
+  @if $use-px {
+    line-height: $baseline;
+  }
+  @if $use-rem {
+    line-height: #{strip-units($baseline)/16}rem;
+  }
+}
+
+@mixin font-scale($scale) {
+  @include units(font-size, get-font-scale($scale));
+}
+
+@mixin line-scale($scale){
+  @include units(line-height, get-line-scale($scale));
+}
+
+@mixin font-correct-baseline($scale){
+  position:relative;
+  @include units(top, get-baseline-offset($scale));
+}

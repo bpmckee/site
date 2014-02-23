@@ -1,0 +1,35 @@
+@mixin units($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $px-values: ();
+  $rem-values: ();
+
+  // Ensure $values is a list.
+  @if type-of($values) != "list" {
+    $values: join((), $values);
+  }
+
+  // Loop through the $values list
+  @each $value in $values {
+    @if(type-of($value) == number and not unitless($value) and (unit($value) == px or unit($value) == rem)) {
+      @if unit($value) == px {
+        $px-values: join($px-values, $value);
+        $rem-values: join($rem-values, px-to-rem($value) );
+      }
+      @else {
+        $px-values: join($px-values, $value);
+        $rem-values: join($rem-values, $value);
+      }
+    }
+    @else {
+      $px-values: join($px-values, $value);
+      $rem-values: join($rem-values, $value);
+    }
+  }
+
+  @if $use-px {
+    #{$property}: $px-values;
+  }
+  @if $use-rem {
+    #{$property}: $rem-values;
+  }
+}

@@ -1,0 +1,12 @@
+// CONVERSIONS
+// --------------------------------------------------
+$basefont: 16px;
+
+@function px-to-rem($value){
+  //@return ((round($value*10000)+1)/($basefont / 1rem * 1))/10000;
+  @return $value / ($basefont / 1rem * 1);
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}

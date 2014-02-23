@@ -1,0 +1,46 @@
+$susy: (
+  columns: 6
+) !global;
+
+.row {
+  margin: 0 $grid-gutters-medium;
+}
+
+.md {
+  @include span(1);
+}
+.md2{
+  @include span(2);
+}
+.md3 {
+  @include span(3);
+}
+.md4 {
+  @include span(4);
+}
+.md5 {
+  @include span(5);
+}
+.lastMd {
+  margin-right: 0;
+}
+.md-last {
+  @extend .md;
+  @extend .lastMd;
+}
+.md2-last {
+  @extend .md2;
+  @extend .lastMd;
+}
+.md3-last {
+  @extend .md3;
+  @extend .lastMd;
+}
+.md4-last {
+  @extend .md4;
+  @extend .lastMd;
+}
+.md5-last {
+  @extend .md5;
+  @extend .lastMd;
+}

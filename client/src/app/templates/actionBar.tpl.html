@@ -1,0 +1,15 @@
+<div class="actionbar">
+  <div class="title">{{ nav.title }}</div>
+  <div class="actions">
+    <div ng-repeat="item in activity.items" class="container">
+      <div action-item template="{{item}}"></div>
+    </div>
+  </div>
+  <div class="menu">
+    <a href="#" class="btn" ng-if="!activity.backBtn" ng-click="nav.open()">
+      <i class="fa fa-bars"></i>
+      <span class="title">{{ nav.title }}</span>
+    </a>
+    <div ng-if="activity.backBtn" action-item template="{{activity.backBtn}}"></div>
+  </div>
+</div>
