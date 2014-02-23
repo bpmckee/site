@@ -493,22 +493,22 @@ a {
 
 /* Components ============================ */
 /* line 2, ../../src/scss/Styles/Small-And-Up/_actionbar.scss */
-.drilldown .actionbar {
+.drilldown.actionbar {
   background: #555;
   border-bottom: 0;
 }
 /* line 5, ../../src/scss/Styles/Small-And-Up/_actionbar.scss */
-.drilldown .actionbar .btn, .drilldown .actionbar button, .drilldown .actionbar input[type="button"], .drilldown .actionbar input[type="submit"] {
+.drilldown.actionbar .btn, .drilldown.actionbar button, .drilldown.actionbar input[type="button"], .drilldown.actionbar input[type="submit"] {
   background: inherit;
   color: white;
   border-color: #777;
 }
 /* line 9, ../../src/scss/Styles/Small-And-Up/_actionbar.scss */
-.drilldown .actionbar .btn.disabled, .drilldown .actionbar button.disabled, .drilldown .actionbar input.disabled[type="button"], .drilldown .actionbar input.disabled[type="submit"] {
+.drilldown.actionbar .btn.disabled, .drilldown.actionbar button.disabled, .drilldown.actionbar input.disabled[type="button"], .drilldown.actionbar input.disabled[type="submit"] {
   color: #777;
 }
 /* line 11, ../../src/scss/Styles/Small-And-Up/_actionbar.scss */
-.drilldown .actionbar .btn.disabled:hover, .drilldown .actionbar button.disabled:hover, .drilldown .actionbar input.disabled[type="button"]:hover, .drilldown .actionbar input.disabled[type="submit"]:hover {
+.drilldown.actionbar .btn.disabled:hover, .drilldown.actionbar button.disabled:hover, .drilldown.actionbar input.disabled[type="button"]:hover, .drilldown.actionbar input.disabled[type="submit"]:hover {
   background: #555;
   color: #777;
 }
@@ -884,40 +884,43 @@ body,
 /* line 9, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 html, body {
   height: 100%;
-  overflow: auto;
 }
 
 /* line 13, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .main-content {
-  overflow-y: scroll;
   background: #f3efe0;
-  padding-bottom: 45px;
+  position: absolute;
+  top: 0;
+  padding-top: 45px;
+  display: table-cell;
 }
 
-/* line 19, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 21, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .main-content,
 .main-content-inner {
   position: relative;
 }
 
-/* line 24, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 26, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .main-container {
   position: relative;
-  overflow: hidden;
 }
 
-/* line 29, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 30, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .pusher {
-  position: relative;
+  position: absolute;
+  width: 100%;
   left: 0;
   z-index: 99;
   height: 100%;
+  display: table;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 38, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 41, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .nav {
+  display: table-cell;
   position: absolute;
   top: 0;
   left: 0;
@@ -929,22 +932,22 @@ html, body {
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 51, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 55, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .menu-open .pusher {
   -webkit-transform: translate3d(250px, 0, 0);
   transform: translate3d(250px, 0, 0);
 }
-/* line 55, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 59, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .menu-open .nav {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
-/* line 59, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 63, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 .menu-open #closeNavOverlay {
   display: block;
 }
 
-/* line 64, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
+/* line 68, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
 #closeNavOverlay {
   display: none;
   position: fixed;
@@ -954,16 +957,6 @@ html, body {
   left: 0;
   box-shadow: 0px 0 14px 2px rgba(0, 0, 0, 0.5);
   z-index: 1001;
-}
-
-/* line 75, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
-.topbarSpacer {
-  height: 45px;
-}
-
-/* line 78, ../../src/scss/Styles/Small-And-Up/_offcanvas.scss */
-footer {
-  padding-bottom: 45px;
 }
 
 /* line 1, ../../src/scss/Styles/Small-And-Up/_foodLog.scss */
@@ -2546,13 +2539,8 @@ footer {
   }
 
   /* line 1, ../../src/scss/Styles/Medium-And-Up/_offcanvas.scss */
-  .topbarSpacer {
-    height: 60px;
-  }
-
-  /* line 4, ../../src/scss/Styles/Medium-And-Up/_offcanvas.scss */
-  footer {
-    padding-bottom: 60px;
+  .main-content {
+    padding-top: 60px;
   }
 }
 @media (min-width: 1025px) {
@@ -2717,13 +2705,8 @@ footer {
   }
 
   /* line 1, ../../src/scss/Styles/Large-And-Up/_offcanvas.scss */
-  .topbarSpacer {
-    height: 80px;
-  }
-
-  /* line 4, ../../src/scss/Styles/Large-And-Up/_offcanvas.scss */
-  footer {
-    padding-bottom: 80px;
+  .main-content {
+    padding-top: 80px;
   }
 }
 @media (min-width: 1441px) {
@@ -2731,22 +2714,22 @@ footer {
   /* Root ================================== */
   /* Components ============================ */
   /* line 2, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
-  .drilldown .actionbar {
-    height: 100px;
-    position: fixed;
-  }
-
-  /* line 6, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar {
     border: 0;
     box-shadow: none;
     position: relative;
+    margin-left: 250px;
   }
-  /* line 10, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 7, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  .actionbar.drilldown {
+    height: 100px;
+    position: fixed;
+  }
+  /* line 11, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .menu {
     display: none;
   }
-  /* line 13, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 14, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .title {
     position: relative;
     float: left;
@@ -2755,13 +2738,13 @@ footer {
     height: 80px;
     line-height: 104px;
   }
-  /* line 21, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 22, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .actions {
     float: left;
     height: 40px;
     margin-top: 30px;
   }
-  /* line 25, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 26, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .actions .container > .btn, .actionbar .actions .container > button, .actionbar .actions .container > input[type="button"], .actionbar .actions .container > input[type="submit"] {
     height: 40px;
     min-width: 40px;
@@ -2772,17 +2755,17 @@ footer {
     line-height: 40px;
     margin-right: 8px;
   }
-  /* line 36, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 37, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .dropdown.active:before {
     top: 33px;
   }
-  /* line 39, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 40, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   .actionbar .dropdown .popout {
     top: 45px;
     left: 0;
   }
 
-  /* line 44, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
+  /* line 45, ../../src/scss/Styles/XLarge-And-Up/_actionbar.scss */
   #topNavWrap {
     position: relative;
   }
@@ -2852,26 +2835,13 @@ footer {
   /* line 9, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
   .main-content {
     margin-left: 250px;
-  }
-
-  /* line 13, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
-  .menu-open #closeNavOverlay {
-    display: none;
-  }
-
-  /* line 17, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
-  .main-content-inner {
+    padding-bottom: 0;
     padding-top: 0;
   }
 
-  /* line 21, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
-  .topbarSpacer {
+  /* line 15, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
+  .menu-open #closeNavOverlay {
     display: none;
-  }
-
-  /* line 24, ../../src/scss/Styles/XLarge-And-Up/_offcanvas.scss */
-  footer {
-    padding-bottom: 0;
   }
 
   /* line 1, ../../src/scss/Styles/XLarge-And-Up/_foodLog.scss */

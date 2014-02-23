@@ -1,4 +1,4 @@
-<div class="actionbar">
+<div class="actionbar" ng-controller="activityCtrl as activity" ng-class="{'drilldown':activity.backBtn}">
   <div class="title">{{ nav.title }}</div>
   <div class="actions">
     <div ng-repeat="item in activity.items" class="container">

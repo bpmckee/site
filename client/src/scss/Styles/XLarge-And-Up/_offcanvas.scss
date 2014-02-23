@@ -8,19 +8,10 @@
 
 .main-content {
   margin-left: 250px;
+  padding-bottom:0;
+  padding-top:0;
 }
 
 .menu-open #closeNavOverlay {
   display:none;
-}
-
-.main-content-inner {
-  padding-top:0;
-}
-
-.topbarSpacer {
-  display:none;
-}
-footer {
-  padding-bottom:0;
 }

@@ -37,13 +37,11 @@
   <div class="main-container" ng-controller="NavCtrl as nav" ng-class="{'menu-open':nav.menuOpen}">
     <div class="pusher">
       <nav></nav>
-      <div class="topbarSpacer"></div>
       <div class="main-content">
+        <action-bar></action-bar>
         <div class="main-content-inner">
-          <div ng-controller="activityCtrl as activity" ng-class="{'drilldown':activity.backBtn}">
             <div ng-view></div>
             <a id="closeNavOverlay" href="#" ng-click="nav.close()"></a>
-          </div>
         </div>
         <footer>This is my footer!!{{nav.title}}</footer>
       </div>

@@ -1,12 +1,13 @@
 //Styles
-.drilldown .actionbar{
-  height:100px;
-  position:fixed;
-}
 .actionbar {
   border:0;
   box-shadow:none;
   position: relative;
+  margin-left:$nav-width;
+  &.drilldown {
+    height:100px;
+    position:fixed;
+  }
   .menu {
     display: none;
   }
